@@ -8,12 +8,12 @@ Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
 * Fabrizio Peragallo de Melo
 * Gabriel Azevedo Fernandes
 * Gabriel Pinto Azevedo
-* Giovanna Pedersoli
-* Pedro
+* Giovanna de Ávila Pedersoli de Rocha
+* Pedro Henrique Moreira
 ## Professores responsáveis
 
 * Rommel Viera Carneiro
-* Pietro
+* Carlos Alberto Marques Pietrobon
 
 ## Instruções de utilização
 
