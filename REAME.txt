@@ -1,0 +1,9 @@
+Caso ao clicar diretamente no index.html e as imagens não carreguem,
+entre no VisualCode e clique em "open with live server", ou acesse
+pelo link no documento word ou link abaixo:
+https://PoorPoisedAutomaticparallelization.gabrielfernan81.repl.co
+
+PS: Está faltando algumas imagens na sessão de "Calendário Mensal"
+e é proposital.
+
+Obrigado!
