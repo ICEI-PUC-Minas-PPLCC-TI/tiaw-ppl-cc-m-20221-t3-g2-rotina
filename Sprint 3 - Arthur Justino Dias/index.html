@@ -1,0 +1,107 @@
+<!doctype html>
+
+<html lang="pt">
+<head>
+    <style>
+        body {
+            background-color: rgb(255, 0, 0);
+        }
+        </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calendário Mensal/Semanal</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="i18n/datepicker-ar.js"></script>
+    <script src="i18n/datepicker-fr.js"></script>
+    <script src="i18n/datepicker-he.js"></script>
+    <script src="i18n/datepicker-zh-TW.js"></script>
+    <script>
+    $( function() {
+      $( "#datepicker" ).datepicker( $.datepicker.regional[ "fr" ] );
+      $( "#locale" ).on( "change", function() {
+        $( "#datepicker" ).datepicker( "option",
+      $.datepicker.regional[ $( this ).val() ] );
+      });
+    } );
+    </script>
+    <script>
+    $( function() {
+      $( "#datepicker" ).datepicker({
+        showButtonPanel: true
+      });
+    } );
+    </script>
+    <script>
+    $( function() {
+      $( "#datepicker" ).datepicker({
+        showOn: "button",
+        buttonImage: "calendario.png",
+        buttonImageOnly: true,
+        buttonText: "Select date"
+      });
+    } );
+    </script>
+</head>
+<body>
+    <title>Calendário Mensal/Semanal</title>
+    <p>Data: <input type="text" id="calendario" /></p>
+    <script>
+        $(function() {
+        $("#calendario").datepicker();
+        });
+        <select id="locale">
+        <option value>Brasilian Portuguese</option>
+        </select>
+    </script>
+    <script>
+    $(function() {
+        $("#calendario").datepicker({
+        showButtonPanel:true
+    });
+    });
+    </script>
+    <!--<script>
+        $(function() {
+            $("#calendario").datepicker({
+            dateFormat: 'dd/mm/yy',
+            dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'],
+            dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+            dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+            monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+            monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez']
+            });
+        });
+    </script> -->   
+    <script>
+        $(function() {
+            $("#calendario").datepicker({dateFormat: 'dd/mm/yy'});
+        });
+    </script>
+    <script>
+     $(function() {
+        $("#calendario").datepicker({
+            changeMonth: true,
+            changeYear: true
+        });
+    });
+    </script>
+    <script>
+    $(function() {
+        $("#calendario").datepicker({
+            showOtherMonths: true,
+            selectOtherMonths: true
+        });
+    });
+    </script>
+    <script>
+    $(function() {
+        $("#calendario").datepicker({
+            numberOfMonths: 3
+        });
+    });
+    </script>
+</body>
+</html>
